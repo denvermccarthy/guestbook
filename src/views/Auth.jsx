@@ -34,7 +34,7 @@ export default function Auth() {
       <form onSubmit={(e) => submitHandler(e)}>
         <label htmlFor="email">
           <input
-            type="text"
+            type="email"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -44,7 +44,7 @@ export default function Auth() {
         </label>
         <label htmlFor="password">
           <input
-            type="text"
+            type="password"
             name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
