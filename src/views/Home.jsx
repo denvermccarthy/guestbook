@@ -8,6 +8,7 @@ export default function Home() {
   const handleSubmit = async () => {
     const { data } = await createEntry(entry);
     setEntries((prev) => [...prev, data]);
+    setEntry('');
   };
   useEffect(() => {
     fetchEntries()
