@@ -26,6 +26,7 @@ export default function Home() {
           type="text"
           value={entry}
           onChange={(e) => setEntry(e.target.value)}
+          placeholder="enter entry"
         />
         <button type="submit" onClick={handleSubmit}>
           {' '}
